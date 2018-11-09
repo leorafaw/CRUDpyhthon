@@ -1,4 +1,4 @@
-from Mysql.CriarTabelas import *
+from CriarTabelas import *
 
 criarTabelaClientes()
 criarTabelaProdutos()

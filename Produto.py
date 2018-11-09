@@ -47,18 +47,3 @@ class Produto(object):
         c.commit()
         c.close()
         return result
-
-    def SelecionarProdutos(self):
-        c = mysql.connect("localhost", "root", "", "quartoanoinfo")
-        cursor = c.cursor()
-        sql = "SELECT * FROM produtos"
-        cursor.execute(sql)
-        numrows = int(cursor.rowcount)
-
-        array = []
-        for i in (0, numrows):
-            array.append(i)
-
-        c.commit()
-        c.close()
-        return array
